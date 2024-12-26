@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // Support modern JavaScript features
+    "module": "ESNext",                          // Use ES modules
+    "strict": true,                             // Enable all strict type-checking options
+    "jsx": "preserve",                          // Allow JSX, useful for shadcn (React-based)
+    "moduleResolution": "Node",                 // Resolve modules like Node.js
+    "esModuleInterop": true,                    // Allow CommonJS imports
+    "skipLibCheck": true,                       // Skip type checking of declaration files
+    "baseUrl": ".",                             // Define the base directory
+    "paths": {
+      "@/*": ["./src/*"]                        // Alias '@' to './src'
+    }
+  },
+  "include": ["src"],                           // Include the src directory for type-checking
+  "exclude": ["node_modules", "dist"]           // Exclude unnecessary files
+}
